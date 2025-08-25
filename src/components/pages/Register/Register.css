@@ -1,0 +1,64 @@
+/* Full page gradient background */
+.register-page {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Card styling */
+.register-card {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 2.5rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Input fields */
+.input-field {
+  border-radius: 10px;
+  padding: 12px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  placeholder {
+    color: #fff;
+  }
+}
+
+/* Button hover effect */
+.btn-hover {
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-hover:hover {
+  background-color: #fff;
+  color: #6a11cb;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Small responsive tweaks */
+@media (max-width: 576px) {
+  .register-card {
+    padding: 2rem 1.5rem;
+  }
+}
